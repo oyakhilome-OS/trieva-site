@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trieva Technologies (Pty) Ltd</title>
+<meta name="description" content="Trieva Technologies (Pty) Ltd — a South African holding company building across real estate, medical, and retail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #071A2E;
+    --bg: #0C2440;
+    --navy: #0C447C;
+    --navy-light: #1B5FA0;
+    --gray: #9A9A92;
+    --gray-dim: #6B6B64;
+    --text: #EDEEF0;
+    --border: rgba(237,238,240,0.10);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    background:
+      radial-gradient(ellipse 700px 500px at 50% 38%, rgba(27,95,160,0.22), transparent 65%),
+      var(--bg-deep);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  .stage {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .mark-wrap {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 36px;
+  }
+
+  .mark-glow {
+    position: absolute;
+    inset: -30px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(27,95,160,0.35), transparent 70%);
+    animation: pulse 4.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.5; transform: scale(0.96); }
+    50% { opacity: 1; transform: scale(1.04); }
+  }
+
+  .mark {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    border-radius: 18px;
+    background: linear-gradient(155deg, var(--navy-light), var(--navy));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--text);
+    box-shadow: 0 8px 30px rgba(12,68,124,0.35);
+  }
+
+  .eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 6vw, 42px);
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  .legal {
+    font-size: 13px;
+    color: var(--gray);
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 28px;
+  }
+
+  p.desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.82;
+    max-width: 380px;
+    margin: 0 auto 34px;
+  }
+
+  .verticals {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .vertical {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: var(--gray);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 7px 16px;
+    letter-spacing: 0.01em;
+  }
+
+  .vertical.live {
+    color: var(--text);
+    border-color: rgba(27,95,160,0.5);
+    background: rgba(27,95,160,0.12);
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: var(--border);
+    margin: 0 auto 24px;
+  }
+
+  .contact {
+    font-size: 13px;
+    color: var(--gray-dim);
+  }
+
+  .contact a {
+    color: var(--gray);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .contact a:hover {
+    color: var(--text);
+    border-color: var(--gray);
+  }
+
+  @media (max-width: 480px) {
+    .verticals { gap: 8px; }
+    .vertical { padding: 6px 13px; font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="mark-wrap">
+    <div class="mark-glow" aria-hidden="true"></div>
+    <div class="mark">T</div>
+  </div>
+
+  <div class="eyebrow">Coming soon</div>
+  <h1>Trieva Technologies</h1>
+  <div class="legal">Trieva Technologies (Pty) Ltd — registered in South Africa</div>
+
+  <p class="desc">
+    A holding company building practical, technology-led ventures across
+    real estate, medical, and retail — starting in Cape Town.
+  </p>
+
+  <div class="verticals">
+    <span class="vertical live">Real estate — Khaya4Rent</span>
+    <span class="vertical">Medical</span>
+    <span class="vertical">Retail</span>
+  </div>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <div class="contact">
+    Get in touch — <a href="mailto:hello@trieva.co.za">hello@trieva.co.za</a>
+  </div>
+</div>
+
+</body>
+</html>
