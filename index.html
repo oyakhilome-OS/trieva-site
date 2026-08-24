@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: center;
     padding: 24px;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -47,6 +47,7 @@
     width: 100%;
     max-width: 480px;
     text-align: center;
+    padding-bottom: 20px;
   }
 
   .mark-wrap {
@@ -154,6 +155,7 @@
   .contact {
     font-size: 13px;
     color: var(--gray-dim);
+    margin-bottom: 20px;
   }
 
   .contact a {
@@ -167,6 +169,16 @@
   .contact a:hover {
     color: var(--text);
     border-color: var(--gray);
+  }
+
+  .operational-details {
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--gray-dim);
+    max-width: 320px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(237,238,240,0.05);
+    padding-top: 16px;
   }
 
   @media (max-width: 480px) {
@@ -201,7 +213,13 @@
   <div class="divider" aria-hidden="true"></div>
 
   <div class="contact">
-    Get in touch — <a href="mailto:hello@trieva.co.za">info@trieva.co.za</a>
+    Get in touch — <a href="mailto:info@trieva.co.za">info@trieva.co.za</a>
+  </div>
+
+  <div class="operational-details">
+    <strong>Head Office & Operations:</strong><br>
+    21 Howard Davis Street, Sanddrift, Cape Town, 7441<br>
+    Director: Zandile Khanyeza
   </div>
 </div>
 
